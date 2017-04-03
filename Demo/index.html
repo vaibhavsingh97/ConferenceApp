@@ -54,9 +54,9 @@
 			
 
 		<style>
-			body { width: 360px; height: 640px; }
+			body { width: 360px; height: 598px; }
 			.landscape, .landscape .prx-page { min-height: 360px; }
-			.portrait, .portrait .prx-page { min-height: 640px; }
+			.portrait, .portrait .prx-page { min-height: 598px; }
 		</style>
 
 		<script type="text/javascript">
@@ -78,19 +78,19 @@
 				name: prx.device
 				,defaultOrientation: 'portrait'
 				,portrait_applies: 1 //new
-				,portrait: [360,640]
+				,portrait: [360,598]
 				,landscape_applies: 1 //new
-				,landscape: [640,360]
+				,landscape: [598,360]
 				,allow_orientation_change: 1 //new
 				,statusbar_skin: 'default' // new
 				,statusbarheightportrait: 0
 				,statusbarheightlandscape: 0
 				,navigationbar_skin: 'default' //new
-				,navigationbarheightportrait: 0
-				,navigationbarheightlandscape: 0
-				,normalportrait: [360,640]
-				,normallandscape: [640,360]
-				,device_s3bucket: '5c527be9-cf9f-4369-90fc-f2ea4cb233c1'
+				,navigationbarheightportrait: 42
+				,navigationbarheightlandscape: 42
+				,normalportrait: [360,598]
+				,normallandscape: [598,360]
+				,device_s3bucket: 'dede0e88-b492-47fb-b4e1-40593bcfc954'
 				,dpr: '1.00'
 				,deviceType: "default"
 				,scrollType: "default"
@@ -104,7 +104,7 @@
 			prx.projectsettings.statusbar = '0'; 
 			prx.projectsettings.statusbarapplies = '0';
 			prx.projectsettings.navigationbar = '0';
-			prx.projectsettings.navigationbarapplies = '0';
+			prx.projectsettings.navigationbarapplies = '1';
 			prx.projectsettings.initialpageid = -1;
 			
 			
@@ -230,6 +230,8 @@
 								<div class="prx-page" data-role="page" id="p-40" data-id="40"></div>
 							
 								<div class="prx-page" data-role="page" id="p-41" data-id="41"></div>
+							
+								<div class="prx-page" data-role="page" id="p-42" data-id="42"></div>
 							
 					<div id="navigationbar"></div>
 					<div id="overlay"></div>
